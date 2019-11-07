@@ -1,0 +1,78 @@
+@import "~taro-ui/dist/style/components/timeline.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/activity-indicator.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/loading.scss";
+
+.station {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .station-box {
+    width: 100%;
+    flex: 1;
+    padding: 30rpx;
+
+    .station-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20rpx;
+      border-radius: 16rpx;
+      position: relative;
+      box-shadow: 10rpx 10rpx 20rpx rgba(0, 0, 0, 0.1);
+      padding: 20rpx 30rpx;
+
+      .right {
+        flex: 1;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+
+        .name {
+          font-size: 28rpx;
+          margin-bottom: 10rpx;
+        }
+        .address {
+          font-size: 20rpx;
+          color: #666;
+          margin-bottom: 10rpx;
+        }
+        .tel {
+          font-size: 20rpx;
+          color: #666;
+        }
+      }
+
+      .go-tel {
+        width: 140rpx;
+        min-width: 140rpx;
+        margin-left: 20rpx;
+        background-image: linear-gradient(45deg, #39b54a, #8dc63f);
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60rpx;
+        border-radius: 8rpx;
+        font-size: 24rpx;
+      }
+    }
+  }
+}
+
+.msg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: #39b54a;
+
+  .at-icon {
+    margin-right: 10rpx;
+    font-size: 44rpx;
+    color: #39b54a;
+  }
+}

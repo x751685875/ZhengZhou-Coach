@@ -1,0 +1,32 @@
+/* ==================
+        初始化
+ ==================== */
+body {
+  background-color: #f0f0f0;
+  font-size: 28upx;
+  color: #333333;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+  box-sizing: border-box;
+}
+
+/* ==================
+          图片
+ ==================== */
+
+image {
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}

@@ -1,0 +1,120 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.filter {
+  width: 100%;
+  height: 340rpx;
+  border-radius: 16rpx;
+  position: relative;
+  box-shadow: 10rpx 10rpx 20rpx rgba(0, 0, 0, 0.1);
+  padding: 50rpx 30rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .start-end {
+    width: 100%;
+    height: 130rpx;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    .start,
+    .end {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      border-bottom: 1px solid #f0f0f0;
+
+      .text {
+        font-size: 24rpx;
+        color: #999;
+        margin-bottom: 10rpx;
+      }
+
+      .location {
+        flex: 1;
+        font-size: 48rpx;
+        color: #333;
+        font-weight: bold;
+      }
+    }
+
+    .start {
+      align-items: flex-start;
+      padding: 0 0 10rpx 10rpx;
+
+      .location {
+        color: #999;
+      }
+    }
+
+    .end {
+      align-items: flex-end;
+      padding: 0 10rpx 10rpx 0;
+
+      .location {
+        text-align: right;
+      }
+
+      .text {
+        text-align: right;
+      }
+    }
+
+    .exchange {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 34rpx;
+      padding-bottom: 10rpx;
+
+      image {
+        width: 50%;
+        height: 60%;
+      }
+    }
+
+    &.on-exchange {
+      flex-direction: row-reverse;
+
+      .end {
+        align-items: flex-start;
+        padding: 0 0 10rpx 10rpx;
+
+        .location {
+          text-align: left;
+        }
+        .text {
+          text-align: left;
+        }
+      }
+
+      .start {
+        align-items: flex-end;
+        padding: 0 10rpx 10rpx 0;
+
+        .location {
+          text-align: right;
+        }
+
+        .text {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .button {
+    background-image: linear-gradient(45deg, #39b54a, #8dc63f);
+    color: #ffffff;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    width: 90%;
+    height: 80rpx;
+    border-radius: 8rpx;
+    font-size: 32rpx;
+  }
+}
