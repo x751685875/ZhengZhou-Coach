@@ -26,6 +26,10 @@
 
 ```bash
 git clone git@github.com:x751685875/ZhengZhou-Coach.git
+
+cd client
+
+yarn build
 ```
 
 ## 使用
