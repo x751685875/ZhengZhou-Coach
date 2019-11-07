@@ -60,7 +60,7 @@ class Index extends Component {
     let _this = this;
     // 请求数据
     Taro.request({
-      url: "https://api.jisuapi.com/bus/station",
+      url: "Api接口",
       data: {
         appkey: "你的ApiKey",
         city: _this.state.station
